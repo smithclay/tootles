@@ -1,7 +1,8 @@
-tootles: a [PagerDuty](http://www.pagerduty.com) incident webhook consumer.
+tootles
 ==
+#### a [PagerDuty](http://www.pagerduty.com) incident webhook consumer.
 
-#### "Because all of the better character names from _Hook_ were taken.""
+"Because all of the better character names from _Hook_ were taken.""
 
 #### Configuration to run this locally or behind a firewall
 
@@ -17,7 +18,7 @@ sh $ localtunnel-beta 7388
 
 Localtunnel will return a URL that you can use as a PagerDuty webhook.
 
-### #How to create a PagerDuty webhook
+#### How to create a PagerDuty webhook
 
 See [the PagerDuty webhook documentation](http://developer.pagerduty.com/documentation/rest/webhooks).
 
