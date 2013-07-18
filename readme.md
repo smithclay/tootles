@@ -12,7 +12,9 @@ It's gotten much easier with the service [ngrok](https://ngrok.com/), which allo
 
 See [the PagerDuty webhook documentation](http://developer.pagerduty.com/documentation/rest/webhooks).
 
-Webhooks (if enabled on your PagerDuty account), can be added on the services page.
+Webhooks (if enabled on your PagerDuty account), can be added on the services page:
+
+![PagerDuty Services Page with Webhooks Enabled](https://www.evernote.com/shard/s302/sh/28ac7056-b8ae-489c-9fc4-56386497b477/01bba2bd8da2e25a3c6098f372db87d3/res/cfd6e2a1-4031-496e-b51f-32bd489c0555/skitch.png?resizeSmall&width=832)
 
 If you created an `ngrok` tunnel, the webhook endpoint URL look be something like this: `http://4bz8bb8a.ngrok.com/pd-webhook`
 
