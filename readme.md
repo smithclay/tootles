@@ -2,7 +2,7 @@ tootles
 ==
 #### a [PagerDuty](http://www.pagerduty.com) incident webhook consumer.
 
-"Because all of the better character names from _Hook_ were taken.""
+> Because all of the better character names from _Hook_ were taken.
 
 #### Configuration to run this locally or behind a firewall
 
