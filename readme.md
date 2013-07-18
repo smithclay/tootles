@@ -29,13 +29,13 @@ sh $ npm start
 To start the server and print out a summary of every webhook incident message to STDOUT:
 
 ``
-sh $ tootles -o summary
+sh $ node index.js -o summary
 ``
 
 To start the server and speak aloud (on Macs) a summary of every webhook incident message:
 
 ``
-sh $ tootles -o summary | xargs -L 1 say
+sh $ node index.js -o summary | xargs -L 1 say
 ``
 
 If you have a recent version Mac OS and would prefer a British English voice (needs to be installed):
