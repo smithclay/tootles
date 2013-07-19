@@ -12,15 +12,13 @@ It's gotten much easier with the service [ngrok](https://ngrok.com/), which allo
 
 See [the PagerDuty webhook documentation](http://developer.pagerduty.com/documentation/rest/webhooks).
 
-Webhooks (if enabled on your PagerDuty account), can be added on the services page:
-
-![PagerDuty Services Page with Webhooks Enabled](https://www.evernote.com/shard/s302/sh/28ac7056-b8ae-489c-9fc4-56386497b477/01bba2bd8da2e25a3c6098f372db87d3/res/cfd6e2a1-4031-496e-b51f-32bd489c0555/skitch.png?resizeSmall&width=832)
+Webhooks (if enabled on your PagerDuty account), can be added on the services page.
 
 If you created an `ngrok` tunnel, the webhook endpoint URL look be something like this: `http://4bz8bb8a.ngrok.com/pd-webhook`
 
 Don't forget to include the path `/pd-webhook`!
 
-### Usage (and UNIX magic)
+### Usage
 
 To start the server on port `7388`:
 
@@ -34,6 +32,8 @@ To start the server and print out a summary of every webhook incident message to
 sh $ node index.js -o summary
 ``
 
+#### Text-to-Speech Incidents Alerts
+
 To start the server and speak aloud (on Macs) a summary of every webhook incident message:
 
 ``
@@ -44,6 +44,14 @@ If you have a recent version Mac OS and would prefer a British English voice (ne
 
 ``
 sh $ node index.js -o summary | xargs -L 1 say -v Daniel
+``
+
+#### Send New Incidents to Printer
+
+On most macs, the `lpr` command will send text to the default printer.
+
+``
+sh $ node index.js -o summary | lpr
 ``
 
 ### Help
