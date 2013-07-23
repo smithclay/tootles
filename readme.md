@@ -1,6 +1,6 @@
 tootles
 ==
-#### a [PagerDuty](http://www.pagerduty.com) incident webhook consumer. Not supported or maintained by PagerDuty.
+#### a [PagerDuty](http://www.pagerduty.com) incident webhook consumer that prints incoming webhooks to STDOUT. Not supported or maintained by PagerDuty.
 
 > Because all of the better character names from _Hook_ were taken.
 
